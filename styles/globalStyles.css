@@ -1,0 +1,59 @@
+/* Generally use Styled Components / Grommet
+ *
+ * Only use this file for truely global styles
+ */
+
+ html,
+ body {
+   background: transparent;
+
+   /* Width of iPhone 5 display (do NOT limit height) */
+   min-width: 320px;
+
+   -webkit-font-smoothing: antialiased;
+
+   font-family: 'Avenir Next', sans-serif;
+   font-weight: 400;
+   font-size: 15px;
+ }
+
+ .hidden {
+   display: none;
+ }
+
+ .invisible {
+   visibility: hidden;
+ }
+
+ :focus {
+   /* The default outline styling, for greatest accessibility. */
+   /* You can skip this to just use the browser's defaults. */
+   outline: #08f auto 2px;
+ }
+
+ body.using-mouse :focus {
+   /* When mouse is detected, ALL focused elements have outline removed. */
+   outline: none;
+ }
+
+ /*
+  * Scrollbars
+  */
+
+ /* ::-webkit-scrollbar {
+   width: 6px;
+   background-color: transparent;
+ }
+
+ ::-webkit-scrollbar-track {
+   background-color: transparent;
+ }
+
+ ::-webkit-scrollbar-thumb {
+   background-color: white !important;
+   border-radius: 4.5px;
+ } */
+
+ /*
+  * END: Scrollbars
+  */
