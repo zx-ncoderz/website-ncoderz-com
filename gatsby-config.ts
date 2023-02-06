@@ -5,7 +5,9 @@ const config: GatsbyConfig = {
     siteName: `n[coder]z`,
     sourceUrl: `https://github.com/zx-ncoderz/website-ncoderz-com`,
   },
-  plugins: [],
+  plugins: [
+    'gatsby-plugin-netlify', // make sure to keep it last in the array
+  ],
 };
 
 // eslint-disable-next-line arca/no-default-export
